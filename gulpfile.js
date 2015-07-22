@@ -8,6 +8,7 @@ var gulp = require('gulp'),
 	changed = require('gulp-changed'),
 	include  = require('gulp-include'),
 	imagemin  = require('gulp-imagemin'),
+	// uglify  = require('gulp-uglify'),
 	connect  = require('gulp-connect'), //tworzy serwer
 	plumber  = require('gulp-plumber'), 
 	rename  = require('gulp-rename'), 
