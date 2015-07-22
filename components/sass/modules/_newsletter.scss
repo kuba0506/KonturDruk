@@ -1,0 +1,87 @@
+/*@Newsletter*/
+// .newsletter-box, .notification {
+.newsletter-box {
+    // margin: 15px 0 20px 0;
+    input[name="email"]
+    {
+        // max-width: 75%;
+        width: 80%;
+        max-width: 80%;
+        margin-right: 2%;
+        display: inline-block;
+        @include border-radius;
+        font-size: 12px;
+        // padding: 13px 10px;
+        padding: 9px 10px;
+        border: 1px solid $color6;
+        box-shadow: none;
+        vertical-align: middle;
+        @include transition;
+        &:focus {
+            @include box-shadow;
+        }
+    }
+    // input[name="email-notify"] {
+    //     float: left
+    // }
+    // , input[name="notification-submit"]
+    input[name="newsletter-submit"]
+     {
+        // background-color: $color1;
+        background: url(../images/ico/arrow-footer.png) no-repeat;
+        background-position: center center;
+        // float: left;
+        display: inline-block;
+        vertical-align: middle;
+        // width: 10%;
+        width: 34px;
+        height: 34px;
+        border: none;
+        color: #FFF;
+        // font-size: 20px;
+        // padding: 10px 14px 12px;
+        // padding: 19px;
+        // @include border-radius;
+        // vertical-align: top;
+        // float: right;
+        @include transition;
+        // &:hover, &:active {
+        //     background-color: darken($color1,15%);
+        // }
+    }
+    // input[name="notification-submit"] {
+    //     float: left;
+    // }
+}
+.newsletter-box p {
+    // padding: 3px 0;
+    margin: 0 0 15px 0;
+    color: $color2;
+    font-size: 12px;
+    line-height: 20px;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+.newsletter-box .h {
+    padding-bottom: 0;
+    height: 45px;
+}
+
+.loading {
+    background: url("../images/gfx/loading.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+.loading--full {
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.loading-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+.newsletter-icon {display: none;}

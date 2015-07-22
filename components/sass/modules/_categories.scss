@@ -1,0 +1,49 @@
+/*
+ * Categories
+ */
+
+.categories {
+  display: block;
+  li {
+    list-style: none;
+  }
+}
+  .categories a {
+    color: $color11;
+    display: block;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 2;
+    &:hover {
+      color: $color2;
+    }
+  }
+  .categories ul {
+    display: none;
+    margin: 0 0 0 15px;
+    padding: 0 0 5px 15px;
+    list-style: disc;
+    // border-left: 1px solid #EEE;
+  }
+   .categories ul li {
+    color: $color2;
+
+   }
+  .categories ul a {
+    font-size: 13px;
+  }
+  .categories .open  a, .categories li.active a {
+    font-weight: $fwb;
+    color: $color2;
+  }
+  .categories .open  ul a {
+    padding: 0;
+    font-size: 14px;
+    line-height: 27px;
+    text-transform: uppercase;
+  }
+  // .categories .active > a {
+  //   background-color: #EEE;
+  //   font-weight: bold;
+  // }

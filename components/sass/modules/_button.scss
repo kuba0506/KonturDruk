@@ -1,0 +1,54 @@
+/*
+ * @Button
+ */
+
+.button {
+	display: inline-block;
+	font-size: 14px;
+	// -webkit-box-sizing: content-box;
+	// -moz-box-sizing: content-box;
+	// box-sizing: content-box;
+	padding: 15px 7px;
+	width: 220px;
+	// border: 1px solid #C5C5C5;
+	border: darken($color4, 5%);
+	// border-radius: 4px;
+	background: $color4;
+	float: right;
+	text-transform: uppercase;
+	background-clip: padding-box;
+	color: #FFF ;
+	vertical-align: middle;
+	text-decoration: none;
+	// text-transform: uppercase;
+	// line-height: 14px;
+	-webkit-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	cursor: pointer;
+	&:hover {
+		// border-color: #B8B8B8;
+		border-color: darken($color4, 10%);
+		background: darken($color4,10%);
+		// background: darken($color2,10%);
+		// color: darken(#fff,20%);
+		text-decoration: none;
+	}
+	&:active {
+		border-color: #666;
+		background: lighten($color4,20%);
+		box-shadow: inset 0 0 3px rgba(0,0,0,.8);
+	}
+}
+	.button--large {
+		padding: 13px 18px 12px;
+		font-size: 14px;
+	}
+	.button--full {
+		width: 100%;
+	}
+
+
+
+
+
+

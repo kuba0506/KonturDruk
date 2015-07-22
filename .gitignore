@@ -1,0 +1,6 @@
+.DS_Store
+.tmp
+.sass-cache
+builds/**/images/*
+node_modules
+PSD

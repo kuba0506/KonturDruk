@@ -1,0 +1,48 @@
+//Czcionka i rozmiar
+$main-font:  'Open Sans', 'Trebuchet MS', sans-serif;
+$main-size: 13px;
+$line-height: 1.4em;
+$fwb: 800;
+
+//Kolory
+$color1a: #050505; //czarny - tekst
+$color1b: #050505; //plus i minus
+
+$color2a: #eeeeee; //szary - tło
+$color2b: #878783; //szary - tekst - szybki kontakt ..., data w artykule
+$color2c: #4b4b4b; //szary - footer ciemniejszy tekst
+$color2d: #979797; //szary - footer jaśniejszy tekst
+$color2e: #b2b2b2; //szary - slider pager
+$color2f: #b2b2b2; //szary - linie tabelka
+$color2g: #333333; //szary - tab aktywny
+$color2h: #595959; //szary - tab nieaktywny
+$color2i: #7f7f7f; //szary - breadcrumbs
+$color2j: #727272; //szary - breadcrumbs hover
+$color2k: #cdcaca; //szary - ikony
+$color2l: #eaeaea; //szary - linie menu
+$color2m: #393939; //szary - linie toggle menu
+$color2n: #f2f2f2; //szary - item
+
+
+$color3: #414141; //tło - nav i footer
+
+$color4: #42a83b; //zielony - tekst,button,, linki i inne elementy
+
+$color5: #ff6600; //pomarańczowy - tekst i różne elementy
+
+$color6: #2d86b8; //niebieski - tekst
+
+$color7: #dc1616; //czerwony - cena produktu
+
+//Responsive
+$tablet: "only screen and (max-width: 603px)";
+$larger-phone: "only screen and (max-width: 480px)";
+$phone: "only screen and (max-width: 360px)";
+
+// $laptop: "only screen and (max-width: 1369px)";
+// $small-desktop: "only screen and (max-width: 1025px)";
+// $small-laptop: "only screen and (max-width: 993px)";
+// $tablet: "only screen and (max-width: 768px)";
+// $larger-phone: "only screen and (max-width: 601px)";
+// $small-phone: "only screen and (max-width: 481px)";
+// $extra-small-phone: "only screen and (max-width: 321px)";

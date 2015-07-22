@@ -1,0 +1,21 @@
+/*
+Kontakt
+ */
+
+.contactIco {
+    background: none no-repeat scroll left top rgba(0, 0, 0, 0);
+    min-height: 50px;
+    padding: 0 0 10px 50px;
+}
+.contactIco h4 {
+    text-transform: uppercase;
+}
+.contactIco--home {
+    background-image: url("../images/ico/home.png");
+}
+.contactIco--phone {
+    background-image: url("../images/ico/phone_ico.png");
+}
+.contactIco--i {
+    background-image: url("../images/ico/i.png");
+}
