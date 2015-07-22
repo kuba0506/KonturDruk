@@ -66,11 +66,12 @@ input[type="search"] {
   }
 
 /* @Select */
-.select { padding: 4px 5px; min-width: 150px;
+.select { 
+  padding: 4px 5px; min-width: 150px;
   background: #FFF;
   @include border-radius;
   border: 0;
-  border: 1px solid $color3;
+  // border: 1px solid $color3;
   font-size: 12px;
   color: #B8B7B7 ;
  }

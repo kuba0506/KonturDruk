@@ -1,5 +1,6 @@
 // _base.scss
 // ==============
+@import url(http://fonts.googleapis.com/css?family=Signika:700,400&subset=latin,latin-ext);
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -9,29 +10,29 @@
 
 body {
   font-family: $main-font;
-  font-size: $main-size;
+  font-size: $normal-size;
   line-height: $line-height;
-  font-weight: 300;
-  color: $color1a;
-  background: $color2a;
-    -ms-overflow-x: hidden ;
-  overflow-x: hidden ;
+  color: $black;
+  background: $white;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 1000px;
+  width: 90%;
   padding: 0 20px;
 }
 
 a {
-  color: $color4;
+  color: $red;
   font-size: 13px;
+  font-weight: $fwb; 
   text-decoration: none;
   outline: none !important;
   @include transition;
   &:hover {
-    color: darken($color4, 10%);
+    color: darken($red, 10%);
+    text-decoration: underline;
   }
   &:active {
     outline: none !important;
@@ -40,8 +41,8 @@ a {
 
 .p,
 p, ul, ol {
-  // margin: .7em 0;
-  margin: 1em 0;
+  margin: .7em 0;
+  // margin: 1em 0;
   padding: 0;
 }
 

@@ -5,8 +5,8 @@ Header + nav
 	display: block;
 }
 .container--nav, .container--footer {
-  background: $color3;
-  @include boxsh-in;
+  // background: $color3;
+  // @include boxsh-in;
 }
 .container--nav {
   // padding: 10px 20px;
@@ -36,275 +36,275 @@ Header + nav
 }
 }
 
-.top-info, .top-logIn {
-  float: left;
-  width: 30%;
-}
-.top-cart {
-  float: left;
-  width: 40%;
-  a {
-  font-weight: bold;
-  color: $color4;
-  }
-}
-.top-info, .top-logIn, .top-cart {
-  padding: 15px 0;
-  text-align: center;
-  cursor: pointer;
-}
-.cart-items {
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  top: -12px;
-  right: -12px;
-  width: 22px;
-  height: 22px;
-  background: $color4;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 22px;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
-
-.h4--top {
-  display: inline-block;
-  color: #FFF
-}
-.main-nav {
-  background: #FFF ;
-  width: 50%;
-  list-style: none;
-  position: fixed;
-  z-index: 9998;
-  top: 0;
-  left: -50%;
-  margin: 0;
-  padding: 90px 30px 30px;
-  height: 100%;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  ul {
-    margin: 0;
-    padding: 0;
-    li {
-       &.active a {
-        color: $color4;
-      }
-    }
-  }
-  > ul {
-    list-style: none;
-    height: 100%;
-    overflow-y: scroll;
-    a {
-      background: url('../images/ico/menu-dot.png') no-repeat left 0.3em;
-      padding-left: 16px;
-      font-size: 14px;
-      line-height: 30px;
-      font-weight: bold;
-      color: $color1a;
-      text-transform: initial;
-    }
-    > li {
-      border-bottom: 1px solid $color2l;
-      &:first-child {
-        border-top: 1px solid $color2l;
-      }
-      &.active {
-        > a {
-           color: $color1a;
-        }
-      }
-       > a {
-          display: block;
-          background-image: none;
-          padding-left: 0;
-          font-weight: bold;
-          font-size: 18px;
-          font-weight: bold;
-          line-height: 45px;
-          text-transform: uppercase;
-      }
-    }
-  }
-  &.menu-toggle {
-    left: 0;
-  }
-}
-li.promocje > a {
-  color: $color4;
-}
-li.producenci > a {
-  color: $color5;
-}
-.h2--nav, .h5--top {
-  font-size: 12px;
-  color: $color2b;
-  font-weight: bold;
-  &:hover {
-    color: darken($color2b , 10%);
-  }
-}
-.logo, .quick-contact {
-  float: left;
-}
-.logo {
-  width: 30%;
-  text-align: center;
-  a {
-    color: $color1a;
-    width: 75%;
-    display: inline-block;
-    line-height: 1.2;
-    img {
-      display: inline-block;
-      margin-bottom: 5px;
-    }
-  }
-}
-.quick-contact {
-  width: 70%;
-}
-.h5--top {
-  text-transform: uppercase;
-  font-size: 10px;
-}
-.tel-info, .mail-info {
-  color: #FFF;
-  text-align: center;
-  font-weight: bold;
-  font-size: 21px;
-  float: left;
-  padding: 20px;
-  background: $color5;
-  @include transition;
-  &:hover {
-    color: darken(#fff, 10%);
-  }
-  span {
-    display: inline-block;
-    margin-right: 10px;
-    vertical-align: -2px;
-  }
-}
-.container--header {
-  padding: 20px 20px 0;
-}
-.tel-info {
-  width: 40%;
-}
-.mail-info {
-  width: 58%;
-  margin-left: 2%;
-}
-/*
-Slide down menu
- */
-.top-info--menu, .top-logIn--menu {
-  background: #303030;
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  @include transition;
-  }
-.top-menu--active {
-  max-height: 400px;
-  opacity: 1;
-}
-.menu-down {
-  background: #303030;
-}
-.top-info--nav, .form-wrapper {
-  padding: 10px 20px;
-}
-.top-info--nav {
-    list-style: none;
-    margin: 0;
-    text-align: center;
-    li {
-      border-top: 1px solid $color2m;
-      &:first-child {
-        border-top: none;
-      }
-      &:hover a, &:active a {
-        background-color: $color3;
-      }
-    }
-    a {
-      display: block;
-      color: #fff;
-      text-transform: uppercase;
-      line-height: 18px;
-      font-size: 18px;
-      padding: 16px 0;
-      font-weight: bold;
-      @include transition;
-      &:hover {
-        color: darken(#fff,15%) ;
-      }
-    }
-}
-// .top-logIn--menu {
-//   height: 380px;
+// .top-info, .top-logIn {
+//   float: left;
+//   width: 30%;
 // }
-.form-wrapper {
-  width: 50%;
-  // position: absolute;
-  left: 50%;
-  top: 50%;
-  // transform: translate(-50%, -50%);
-  padding: 0;
-  margin: 33px auto 0;
-  .search {
-    float: none;
-    color: #FFF;
-    font-size: 16px;
-    margin: 0;
-  }
-  .input {
-    margin-bottom: 15px;
-  }
-  input[name="login"] {
-    margin-top: 15px;
-  }
-}
-.input--solokolos-full {
-  width: 100%;
-  font-size: 18px;
-  line-height: 1.2;
-  padding: 19px 10px;
-  text-align: center;
-}
-.register, .button-logIn {
-  display: block;
-  text-align: center;
-  color: #FFF;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 20px 7px;
-  float: left;
-  width: 50%;
-}
-.password-reminder {
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
-  // width: 100%;
-  text-align: center;
-  border-top: 1px solid $color2m;
-  padding: 25px 15px;
-  a {
-    font-size: 14px;
-    font-weight: bold;
-  }
-}
+// .top-cart {
+//   float: left;
+//   width: 40%;
+//   a {
+//   font-weight: bold;
+//   color: $color4;
+//   }
+// }
+// .top-info, .top-logIn, .top-cart {
+//   padding: 15px 0;
+//   text-align: center;
+//   cursor: pointer;
+// }
+// .cart-items {
+//   position: absolute;
+//   display: inline-block;
+//   text-align: center;
+//   top: -12px;
+//   right: -12px;
+//   width: 22px;
+//   height: 22px;
+//   background: $color4;
+//   font-size: 12px;
+//   font-weight: bold;
+//   line-height: 22px;
+//   -webkit-border-radius: 50%;
+//   border-radius: 50%;
+// }
+
+// .h4--top {
+//   display: inline-block;
+//   color: #FFF
+// }
+// .main-nav {
+//   background: #FFF ;
+//   width: 50%;
+//   list-style: none;
+//   position: fixed;
+//   z-index: 9998;
+//   top: 0;
+//   left: -50%;
+//   margin: 0;
+//   padding: 90px 30px 30px;
+//   height: 100%;
+//   -webkit-transition: all 1s ease;
+//   -moz-transition: all 1s ease;
+//   -ms-transition: all 1s ease;
+//   -o-transition: all 1s ease;
+//   transition: all 1s ease;
+//   ul {
+//     margin: 0;
+//     padding: 0;
+//     li {
+//        &.active a {
+//         color: $color4;
+//       }
+//     }
+//   }
+//   > ul {
+//     list-style: none;
+//     height: 100%;
+//     overflow-y: scroll;
+//     a {
+//       background: url('../images/ico/menu-dot.png') no-repeat left 0.3em;
+//       padding-left: 16px;
+//       font-size: 14px;
+//       line-height: 30px;
+//       font-weight: bold;
+//       color: $color1a;
+//       text-transform: initial;
+//     }
+//     > li {
+//       border-bottom: 1px solid $color2l;
+//       &:first-child {
+//         border-top: 1px solid $color2l;
+//       }
+//       &.active {
+//         > a {
+//            color: $color1a;
+//         }
+//       }
+//        > a {
+//           display: block;
+//           background-image: none;
+//           padding-left: 0;
+//           font-weight: bold;
+//           font-size: 18px;
+//           font-weight: bold;
+//           line-height: 45px;
+//           text-transform: uppercase;
+//       }
+//     }
+//   }
+//   &.menu-toggle {
+//     left: 0;
+//   }
+// }
+// li.promocje > a {
+//   color: $color4;
+// }
+// li.producenci > a {
+//   color: $color5;
+// }
+// .h2--nav, .h5--top {
+//   font-size: 12px;
+//   color: $color2b;
+//   font-weight: bold;
+//   &:hover {
+//     color: darken($color2b , 10%);
+//   }
+// }
+// .logo, .quick-contact {
+//   float: left;
+// }
+// .logo {
+//   width: 30%;
+//   text-align: center;
+//   a {
+//     color: $color1a;
+//     width: 75%;
+//     display: inline-block;
+//     line-height: 1.2;
+//     img {
+//       display: inline-block;
+//       margin-bottom: 5px;
+//     }
+//   }
+// }
+// .quick-contact {
+//   width: 70%;
+// }
+// .h5--top {
+//   text-transform: uppercase;
+//   font-size: 10px;
+// }
+// .tel-info, .mail-info {
+//   color: #FFF;
+//   text-align: center;
+//   font-weight: bold;
+//   font-size: 21px;
+//   float: left;
+//   padding: 20px;
+//   background: $color5;
+//   @include transition;
+//   &:hover {
+//     color: darken(#fff, 10%);
+//   }
+//   span {
+//     display: inline-block;
+//     margin-right: 10px;
+//     vertical-align: -2px;
+//   }
+// }
+// .container--header {
+//   padding: 20px 20px 0;
+// }
+// .tel-info {
+//   width: 40%;
+// }
+// .mail-info {
+//   width: 58%;
+//   margin-left: 2%;
+// }
+// /*
+// Slide down menu
+//  */
+// .top-info--menu, .top-logIn--menu {
+//   background: #303030;
+//   max-height: 0;
+//   opacity: 0;
+//   overflow: hidden;
+//   @include transition;
+//   }
+// .top-menu--active {
+//   max-height: 400px;
+//   opacity: 1;
+// }
+// .menu-down {
+//   background: #303030;
+// }
+// .top-info--nav, .form-wrapper {
+//   padding: 10px 20px;
+// }
+// .top-info--nav {
+//     list-style: none;
+//     margin: 0;
+//     text-align: center;
+//     li {
+//       border-top: 1px solid $color2m;
+//       &:first-child {
+//         border-top: none;
+//       }
+//       &:hover a, &:active a {
+//         background-color: $color3;
+//       }
+//     }
+//     a {
+//       display: block;
+//       color: #fff;
+//       text-transform: uppercase;
+//       line-height: 18px;
+//       font-size: 18px;
+//       padding: 16px 0;
+//       font-weight: bold;
+//       @include transition;
+//       &:hover {
+//         color: darken(#fff,15%) ;
+//       }
+//     }
+// }
+// // .top-logIn--menu {
+// //   height: 380px;
+// // }
+// .form-wrapper {
+//   width: 50%;
+//   // position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   // transform: translate(-50%, -50%);
+//   padding: 0;
+//   margin: 33px auto 0;
+//   .search {
+//     float: none;
+//     color: #FFF;
+//     font-size: 16px;
+//     margin: 0;
+//   }
+//   .input {
+//     margin-bottom: 15px;
+//   }
+//   input[name="login"] {
+//     margin-top: 15px;
+//   }
+// }
+// .input--solokolos-full {
+//   width: 100%;
+//   font-size: 18px;
+//   line-height: 1.2;
+//   padding: 19px 10px;
+//   text-align: center;
+// }
+// .register, .button-logIn {
+//   display: block;
+//   text-align: center;
+//   color: #FFF;
+//   font-size: 18px;
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   padding: 20px 7px;
+//   float: left;
+//   width: 50%;
+// }
+// .password-reminder {
+//   // position: absolute;
+//   // bottom: 0;
+//   // left: 0;
+//   // width: 100%;
+//   text-align: center;
+//   border-top: 1px solid $color2m;
+//   padding: 25px 15px;
+//   a {
+//     font-size: 14px;
+//     font-weight: bold;
+//   }
+// }
 
 
 
