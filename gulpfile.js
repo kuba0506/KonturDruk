@@ -4,12 +4,14 @@
 var gulp = require('gulp'),
 	gutil = require('gulp-util'), //dodatkowe narzędzia jak log
 	compass = require('gulp-compass'),
+	autoprefixer = require('gulp-autoprefixer'),
 	changed = require('gulp-changed'),
-	// cxoncat  = require('gulp-cxoncat'),
 	include  = require('gulp-include'),
 	imagemin  = require('gulp-imagemin'),
 	connect  = require('gulp-connect'), //tworzy serwer
+	plumber  = require('gulp-plumber'), 
 	rename  = require('gulp-rename'), 
+	// sass  = require('gulp-sass'), 
 	minify = require('gulp-uglify');
 
 /**
@@ -19,14 +21,15 @@ var jsSources = [
 	'components/scripts/_main.js'
 	],
 
-	sassSources = ['components/sass/styles.scss'],
+	sassSources = './components/sass/styles.scss',
 
-	htmlSources = ['builds/development/*.html'],
+	cssSources = './builds/development/css',
+
+	htmlSources = './builds/development/*.html',
 
 	imgSources = './components/images/**/*',
 
 	imgDestination = './builds/development/images';
-	// imgDestination = ['./builds/development/images'];
 
 //Proste logowanie
 gulp.task('log', function () {
@@ -36,6 +39,7 @@ gulp.task('log', function () {
 //Łączenie JS
 gulp.task('js',function () {
 	gulp.src(jsSources)
+	.pipe(plumber())
 	.pipe(include())
 		.on('error', gutil.log)
 	// .pipe(browserify())
@@ -48,14 +52,18 @@ gulp.task('js',function () {
 //Sass do CSS
 gulp.task('sass', function () {
 	gulp.src(sassSources)
+	.pipe(plumber())
 	.pipe(compass({
 		css: 'builds/development/css/',
 		sass: 'components/sass/',
 		image: 'builds/development/images',
-		style: 'compact'
+		style: 'expanded',
 	}))
 	.on('error', gutil.log)
-	.pipe(gulp.dest('builds/development/css'))
+	.pipe(autoprefixer(' > 2%'))
+	// .pipe(sass(
+	// 	{ outputStyle: 'compact' }))
+	.pipe(gulp.dest(cssSources))
 	.pipe(connect.reload())
 });
 
@@ -76,10 +84,12 @@ gulp.task('html', function () {
 //Zdjęcia
 gulp.task('img', function () {
 	gulp.src(imgSources)
+	.pipe(plumber())
 	.pipe(changed(imgDestination))
 	.pipe(imagemin())
 	.pipe(gulp.dest(imgDestination));
 });
+
 
 // ////////////////////////////////////////////////
 // Build Task
@@ -113,8 +123,8 @@ gulp.task('build', ['build:copy', 'build:remove']);
  */
 gulp.task('watch', function () {
 	gulp.watch(htmlSources, ['html']);
-	gulp.watch(jsSources, ['js']);
 	gulp.watch('components/sass/**/*.scss', ['sass']);
+	gulp.watch(jsSources, ['js']);
 	gulp.watch(imgSources, ['img']);
 });
 
@@ -122,4 +132,3 @@ gulp.task('watch', function () {
  * Default task
  */
 gulp.task('default', ['html', 'js', 'sass', 'img', 'connect', 'watch']);
-// gulp.task('default', ['html', 'js', 'connect', 'watch']);
