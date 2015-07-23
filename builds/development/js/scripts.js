@@ -1,6 +1,18 @@
 var konturDruk = function () {
-
-/// =include cycle.js
+/*
+     ######  ##    ##  ######  ##       ########
+    ##    ##  ##  ##  ##    ## ##       ##
+    ##         ####   ##       ##       ##
+    ##          ##    ##       ##       ######
+    ##          ##    ##       ##       ##
+    ##    ##    ##    ##    ## ##       ##
+     ######     ##     ######  ######## ########
+*/
+    $('[data-cycle]').each(function() {
+        var el = $(this),
+            config = el.dataConfig('cycle', {log: false});
+        el.cycle(config);
+    });
 /// =include lightbox.js
 /*
     ########  ########   #######  ########  ########   #######  ##      ## ##    ##

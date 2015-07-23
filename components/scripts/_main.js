@@ -1,6 +1,6 @@
 var konturDruk = function () {
 
-/// =include cycle.js
+// =include cycle.js
 /// =include lightbox.js
 // =include dropdown.js
 /// =include toggle.js
