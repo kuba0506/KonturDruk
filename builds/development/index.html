@@ -10,21 +10,63 @@
   <meta name="author" content="Redhand.pl - Strony Internetowe Częstochowa">
   <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:300,500&subset=latin-ext,latin' rel='stylesheet' type='text/css'> -->
   <link rel="stylesheet" href="css/libs.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
   <script src="js/modernizr.min.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="container container--nav" role="banner">
+  <header class="header relative">
+
+    <div class="header-top">
+      <div class="container">
+
+        <div class="top-info">
+          <div class="mail">
+            <i class="icon icon-mail"></i>
+            <a href="mailto:biuro@konturdruk.pl">biuro@konturdruk.pl</a>
+          </div>
+          <div class="phone">
+            <i class="icon icon-phone"></i>
+            <a href="tel:48785658954">+48 785 658 954</a>
+          </div>
+        </div>
+        <div class="top-lang">
+          <a href="#" class="active">PL</a>
+          <a href="#">EN</a>
+        </div>
+
+      </div>
+    </div>
+    
+
+
+    <div class="container" role="banner">
       <h1 class="logo">
         <a href="#" rel="home">
           <img src="images/logo.png" alt="EXAMPLE">
         </a>
+        <a href="#" rel="home" class="logo-hover">
+          <img src="images/logo-hover.png" alt="EXAMPLE">
+        </a>
       </h1>
       
-      <nav class="nav clearfix" role="navigation">
-              
-        
+      <nav class="nav" role="navigation">
+        <ul class="menu">
+          <li class="dropdown" data-dropdown>
+              <a href="#" class="triangle">o nas</a>
+              <ul class="submenu" data-dropdown-content>
+                <li><a href="#">sitodruk</a></li>
+                <li><a href="#">termotransfer</a></li>
+                <li><a href="#">haft komputerowy</a></li>
+                <li><a href="#">sublimacja</a></li>
+                <li><a href="#">dtg</a></li>
+                <li><a href="#">tempodruk</a></li>
+              </ul>
+          </li>
+          <li><a href="#" class="triangle">oferta</a></li>
+          <li><a href="#" class="triangle">techniki zdobienia</a></li>
+          <li><a href="#" class="triangle">kontakt</a></li>
+          <li class="fb"><a href="#"></a></li>
+        </ul>        
       </nav>
 
     </div><!-- /container-nav -->
@@ -68,7 +110,7 @@
 
   <script src="js/jquery-1.11.2.min.js"></script>
   <script src="js/libs.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 </html>

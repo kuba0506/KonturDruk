@@ -13,8 +13,8 @@ var gulp = require('gulp'),
 	plumber  = require('gulp-plumber'), 
 	rename  = require('gulp-rename'), 
 	// sass  = require('gulp-sass'), 
-	minify = require('gulp-uglify'),
-	watch = require('gulp-watch');
+	minify = require('gulp-uglify');
+	// watch = require('gulp-watch');
 
 /**
  * Sources
@@ -42,9 +42,9 @@ gulp.task('log', function () {
 gulp.task('js',function () {
 	gulp.src(jsSources)
 	.pipe(plumber())
-	.pipe(watch(jsSources))
 	.pipe(include())
 		.on('error', gutil.log)
+	// .pipe(watch(jsSources))
 	// .pipe(browserify())
 	.pipe(rename('scripts.js'))
 	.pipe(gulp.dest('builds/development/js'))
@@ -130,8 +130,8 @@ gulp.task('build', ['build:copy', 'build:remove']);
 gulp.task('watch', function () {
 	gulp.watch(htmlSources, ['html']);
 	gulp.watch('components/sass/**/*.scss', ['sass']);
-	gulp.watch(jsSources, ['js']);
-	gulp.watch(imgSources, ['img']);
+	gulp.watch('components/scripts/*.js', ['js']);
+	gulp.watch('imgSources', ['img']);
 });
 
 /**

@@ -20,19 +20,18 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   width: 90%;
-  padding: 0 20px;
+  @include clearfix;
+  // padding: 0 20px;
 }
 
 a {
   color: $red;
   font-size: 13px;
-  font-weight: $fwb; 
   text-decoration: none;
   outline: none !important;
   @include transition;
   &:hover {
     color: darken($red, 10%);
-    text-decoration: underline;
   }
   &:active {
     outline: none !important;

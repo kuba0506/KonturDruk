@@ -85,3 +85,4 @@
             '<p><b>Usuwanie plików cookies:</b></p>' +
             '<p>Oprogramowanie do przeglądania stron internetowych ma domyślnie ustawione akceptowanie przyjmowania plików cookies. Ustawienie to można zmienić samodzielnie w dowolnym czasie tak aby pliki cookies były blokowane. Zablokowanie plików cookies może jednak spowodować nieprawidłowe funkcjonowanie mechanizmów na stronie internetowej co uniemożliwi w szczególności np.: korzystanie z koszyka zakupowego lub logowanie użytkownika.</p>'
         );
+})();
