@@ -1539,3 +1539,100 @@ Footer
 .footer-copy a {
   color: #4F4F4F;
 }
+
+/**
+ * Podstrona
+ */
+.subpage-content .title {
+  padding-top: 50px;
+}
+
+.subpage-text {
+  display: block;
+  padding: 20px 0;
+  -webkit-columns: 2 100px;
+  -moz-columns: 2 100px;
+  columns: 2 100px;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+}
+.subpage-text p:first-child {
+  margin-top: 0;
+}
+
+.subpage-gallery .product-item {
+  width: 24%;
+  margin-bottom: 15px;
+  border: none;
+  cursor: pointer;
+}
+.subpage-gallery .product-item:hover .item-hover {
+  opacity: 1;
+}
+
+.product-inner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  line-height: 200px;
+}
+
+.item-hover, .item-photo {
+  position: absolute;
+}
+
+.item-photo {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.item-hover {
+  opacity: 0;
+  background: rgba(184, 35, 35, 0.9);
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  z-index: 2;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.item-hover .icon {
+  color: #fff;
+  font-size: 16px;
+}
+
+.item-box {
+  padding: 0 40px;
+}
+
+.item-text {
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/*
+Breadcrumbs
+ */
+.breadcrumbs {
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 5px;
+  font-size: 11px;
+  color: #727272;
+}
+
+.breadcrumbs > a, .breadcrumbs > span {
+  color: #727272;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.breadcrumbs > a:hover {
+  color: #7f7f7f;
+}
