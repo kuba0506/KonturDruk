@@ -739,7 +739,7 @@ ul.menu li {
   vertical-align: bottom;
 }
 ul.menu li.fb a {
-  background: url("../images/gfx/fb.png") no-repeat center;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPlJREFUeNpi5OPjYwACZiCuAOIiIBZiIA28A+I+IO4A4r/M7OzsIMFaIG4GYk4G0gFIjxPIMCA+yAh14SsgFmWgDLwGYjEWICFNgmEfgXgBEF+D8s2AOBnKBpkhzQINP2LAdyDWA+JHSGJfkAwExwULCV46hWQYyFfeUBeiAFIM/ILEjgLiLmyKmIg0DBRmO5D4l4F4FpQmy8CDQDwFiQ8yPJ0SA7WA2AOJbwDEaUBsTG4Y2kPDEOZtkOHtlIQh0WBoGPiXiub9BRn4FFoEMVChcHgK8/JEIjSAstp/KMYWw+B0CisPjwDxL2j6IrVMBPmuFWrJf4AAAwC5JC4v+kahSwAAAABJRU5ErkJggg==") no-repeat center;
   width: 20px;
   height: 20px;
 }
