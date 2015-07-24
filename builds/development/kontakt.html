@@ -71,152 +71,87 @@
   </header>
 
   <main role="main" class="main">
+    <div id="map_canvas" class="content-noimg" style="width: 100%; height: 400px;"></div>
 
-    <div class="kuba-slider-slide">
-      <div class="david-slider-box">
-        <img class="kuba-slider-image" src="http://dummyimage.com/1680x190/30a130/fff.jpg" alt="{$content.nazwa}">
-      </div>
-    </div>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script>
+  window.onload = function() {
+    //50.803579, 19.088506
+    var map,
+      // lat = parseFloat("{$global.lat}"), // Tak dla bezpieczeństwa
+      // lng = parseFloat("{$global.lng}"),
+      lat = 50.803579, // Tak dla bezpieczeństwa
+      lng = 19.088506,
+      nowLatLng = new google.maps.LatLng(lat, lng),
+      options = {
+        zoom: 13,
+        center: nowLatLng,
+        // scrollwheel: false,
+        disableDefaultUI: true,
+        styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}],
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+
+    };
+
+    map = new google.maps.Map(document.getElementById("map_canvas"), options);
+
+    var marker = new google.maps.Marker({
+      position: nowLatLng,
+      map: map
+    });
+
+    marker.setAnimation(google.maps.Animation.DROP);
+
+  };
+  </script>
 
     <div class="container">
       <div class="subpage-content">
-        <h2 class="title">Oferta</h2>
+        <h2 class="title">Kontakt</h2>
 
         <div class="breadcrumbs">
             <a href="#">Strona główna</a> <b>››</b>
             <a href="#">O firmie</a> <b>››</b>
             <span>Laboratorium</span>
         </div>
-
-        <article class="subpage-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat sed veritatis quod nihil possimus, repellendus esse itaque cumque sequi voluptatibus omnis delectus, exercitationem molestiae dolorem ullam! Distinctio deleniti ea placeat non ut omnis asperiores ab labore dolor architecto ipsum molestiae, quae ex voluptatibus facere consequatur veritatis sunt. Aut, incidunt, voluptas.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus animi laboriosam similique quia, officiis deleniti cumque, dolor, ab quidem beatae reprehenderit eligendi nesciunt possimus quo. Soluta non quo natus saepe!</p>
-        </article>
         
-        <div class="offfer-gallery">
-          <h3 class="h3--offer">Zobacz nasze katalogi</h3>
-          
-          <div class="productWrapper productWrapper-offer">
-            
-            <div class="product-item">
-              <div class="product-inner">
-                <img src="images/ico/ico-shirt.png">
-                <span>Odzież reklamowa</span>
-              </div>
-            </div>
-
-            <div class="product-item">
-              <div class="product-inner">
-                <img src="images/ico/ico-porcelana.png">
-                <span>Porcelana</span>
-              </div>
-            </div>
-
-            <div class="product-item">
-              <div class="product-inner">
-                <img src="images/ico/ico-gadget.png">
-                <span>Gadżety reklamowe</span>
-              </div>
-            </div>
-
-            <div class="product-item">
-              <div class="product-inner">
-                <img src="images/ico/ico-adidas.png">
-              </div>
-            </div>
-
-            <div class="product-item">
-              <div class="product-inner">
-                <img src="images/ico/ico-zina.png">
-              </div>
-            </div>
-
-            <div class="product-item product-item--reset"></div>
+        <div class="contact-page">
+          <div class="column">
+            <h6 class="h6--footer h6--contact">Siedziba firmy</h6>
+              <p> 
+                <b>Kontur Druk</b> <br>
+                ul. Św. Barbary 99 <br>
+                42-200 Częstochowa
+              </p>
+              <p>
+                NIP: 985 688 55 55 <br>
+                REGON: 5862144
+              </p>
+              <p>
+                Godziny otwarcia: <br>
+                Pn-Pt: 10:00-18:00
+              </p>
           </div>
 
-          <div class="productWrapper productWrapper--catalog">
-
-            <div class="product-item">
-              <div class="product-inner">
-                <div class="item-photo"><img src="http://dummyimage.com/180x140/304aa1/fff.jpg" alt=""></div>
-
-                <div class="product-text">
-                  <h4 class="h4--offer"><span>Koszule</span></h4>
-                  <!-- Ograniczyć ilość znaków w span-->
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, voluptatum.</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="product-item">
-              <div class="product-inner">
-                <div class="item-photo"><img src="http://dummyimage.com/180x140/96c742/fff.jpg" alt=""></div>
-                <div class="product-text">
-                  <h4 class="h4--offer"><span>Koszulki</span></h4>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, tempore.</span>
-                </div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-inner">
-                <div class="item-photo"><img src="http://dummyimage.com/180x140/631dcc/fff.jpg" alt=""></div>
-                <div class="product-text">
-                  <h4 class="h4--offer"><span>Bluze</span></h4>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, et!</span>
-                </div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-inner">
-                <div class="item-photo"><img src="http://dummyimage.com/180x140/cc1e7e/fff.jpg"></div>
-                <div class="product-text">
-                  <h4 class="h4--offer"><span>Polary</span></h4>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, odit.</span>
-                </div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-inner">
-                <div class="item-photo"><img src="http://dummyimage.com/180x140/304aa1/fff.jpg" alt=""></div>
-                <div class="product-text">
-                  <h4 class="h4--offer"><span>Czapki</span></h4>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, molestias.</span>
-                </div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-inner">
-                <div class="item-photo"><img src="http://dummyimage.com/180x140/cc1e7e/fff.jpg" alt=""></div>
-                <div class="product-text">
-                  <h4 class="h4--offer"><span>Galanteria</span></h4>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, illum!</span>
-                </div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-inner">
-                <div class="item-photo"><img src="http://dummyimage.com/180x140/631dcc/fff.jpg" alt=""></div>
-                <div class="product-text">
-                  <h4 class="h4--offer"><span>Kubki</span></h4>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, voluptates!</span>
-                </div>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-inner">
-                <div class="item-photo"><img src="http://dummyimage.com/180x140/304aa1/fff.jpg" alt=""></div>
-                <div class="product-text">
-                  <h4 class="h4--offer"><span>Breloki</span></h4>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, repudiandae!</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="product-item product-item--reset"></div>
+          <div class="column">
+            <h6 class="h6--footer h6--contact">Częstochowa</h6>
+            <p> 
+              <b>Paweł Jakubik</b> <br>
+              <a class="tel" href="tel:48874665658">+48 874 665 658</a> <br>
+              <a href="mailto:pawel@konturdruk.pl">pawel@konturdruk.pl</a>
+            </p>
           </div>
 
-
-        </div>
+          <div class="column">
+            <h6 class="h6--footer h6--contact">Wrocław</h6>
+            <p> 
+              <b>Łukasz Jakubik</b> <br>
+              <a class="tel" href="tel:48658665444">+48 658 665 444</a> <br>
+              <a href="mailto:lukasz@konturdruk.pl">lukasz@konturdruk.pl</a>
+            </p>
+          </div>
+        </div>    
+        
       </div>
     </div>
 

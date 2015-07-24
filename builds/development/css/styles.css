@@ -1720,3 +1720,28 @@ Breadcrumbs
   display: inline-block;
   vertical-align: middle;
 }
+
+/**
+ * Kontakt
+ */
+.contact-page {
+  padding: 30px 0;
+}
+.contact-page:after, .contact-page:before {
+  display: table;
+  content: "";
+}
+.contact-page:after {
+  clear: both;
+}
+.contact-page .column {
+  width: 33%;
+}
+.contact-page .column a.tel {
+  color: #000;
+}
+
+.h6--contact {
+  color: #000;
+  font-size: 18px;
+}
