@@ -1,0 +1,74 @@
+/**
+ * Oferta
+ */
+.h3--offer {
+    font-size: 24px;
+    height: 100%;
+    margin-top: 0;
+}
+.h4--offer {
+    min-height: 2.8em;
+    line-height: 2.8em;
+    margin: 0;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.4em;
+        color: $red;
+        font-size: 18px;
+        font-weight: $fwb;  
+    }
+}
+.product-text span {
+    display: inline-block;
+    max-height: 5.6em; 
+}
+.productWrapper--catalog {
+    margin-top: 15px;
+}
+.productWrapper--catalog .product-item {
+    margin-bottom: 15px;
+    border: 1px solid #ebebeb; 
+}
+.productWrapper--catalog .product-inner {
+    padding: 10px;
+    height: auto;
+    position: static;
+    line-height: 1.4em; 
+}
+.productWrapper--catalog .item-photo {
+    text-align: center;
+    position: static;
+    height: 140px;
+    line-height: 140px;
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+.productWrapper-offer .product-item {
+    width: 19%;
+}
+.productWrapper-offer .product-inner {
+    height: auto;
+    line-height: normal;
+    background: $red;
+    color: $white; 
+    text-align: center; 
+    font-size: 16px;
+    line-height: 60px;
+    padding: 0 5px;
+    height: 60px;
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    span {
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+.ico-offer {
+    display: inline-block;
+    vertical-align: middle;
+}
