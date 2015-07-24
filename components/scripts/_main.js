@@ -4,9 +4,10 @@ var konturDruk = function () {
 /// =include lightbox.js
 // =include dropdown.js
 /// =include toggle.js
-/// =include validator.js
+// =include validator.js
 /// =include tooltips.js
 /// =include cookies.js
+// =include log.js
 };
 
 //Uruchomienie skryptów po załadowaniu strony

@@ -1,43 +1,208 @@
 /*
 Footer
  */
-.container--footer {
-    padding: 20px 40px;
-    text-align: center;
-}
-.h5--foter {
-    color: #FFF ;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0 0 25px;
-}
-// .footer {
-//     display: block;
-//     padding: 15px 15px 30px;
-//     font-size: 10px;
-//     color: $color6;
-// }
-// .no-rgb .footer {
-//     background-color: $color5a;
-// }
-.footer-copyright {
-    display: inline-block;
-    color: #898989 ;
-    font-size: 11px;
-    margin-top: 25px;
-}
-.footer-right {
-    // float: right;
-    font-size: 10px;
+.footer {
     display: block;
-    color: $color2d;
-    @include transition;
-    // &:hover {
-    //     color: #9E9E9E;
-    // }
 }
+.footer-top {
+    background-color: $lightGrey;
+    @include clearfix;
+    padding: 20px 0; 
+}
+.h5--footer {
+    font-size: 26px;
+    margin-top: 0;
+    font-weight: $fwb; 
+}
+.footer-contact, .footer-address, .footer-ask-question {
+    float: left;
+}
+.footer-contact {
+    width: 35%;
+}
+.footer-address {
+    width: 30%;
+    padding-left: 10%;
+    padding-top: 50px;
+}
+.footer-logo {
+    margin-bottom: 20px;
+}
+.contact-ico {
+    @include clearfix;
+    margin-bottom: 15px;
+}
+.contact-ico .icon, .contact-ico .address {
+    float: left;
+    line-height: 20px;
+    font-size: 14px;
+}
+.contact-ico .icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.address {
+    font-style: normal;
+}
+.address a {
+    color: $black; 
+}
+.contact-ico .icon {
+    width: 20px;
+    padding-right: 5px;
+}
+.footer-ask-question {
+    padding-left: 5%;
+    width: 20%;
+    padding-top: 50px;
+}
+.ask-box {
+    background-color: $grey;
+    width: 270px;
+    text-align: center;
+    height: 270px;
+    line-height: 270px;
+    @include border-radius(50%); 
+    font-size: 26px;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: transparent;
+        border-left: 0;
+        // border-top: 10px;
+        // border-botttom: 10px;
+        top: 50%;
+        left: -48px;
+        border-right-color: $grey;
+        border-width: 50px;
+        margin-top: -21px;
+        border-width: 25px 50px 25px 0;
+        border-color: transparent $grey transparent transparent;
+    }   
+}
+.ask-text {
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 26px;
+}
+
+.footer-trusted {
+    background-color: $grey; 
+    border-top: 1px solid #dbdbdb;
+    padding: 15px 0;
+    p {
+        margin: 0;
+    }
+    .product-item {
+        width: 11.5%;
+    }
+}
+.item {
+    // display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-info {
+    background: $darkGrey;
+    padding: 20px 0; 
+}
+.column {
+    width: 25%;
+    float: left;
+    padding-right: 5%;
+}
+.column--departments {
+    width: 50%;
+    padding-right: 5%;
+    @include clearfix;
+}
+.h6--footer {
+    font-size: 20px;
+    margin: 0 0 15px;
+    font-weight: $fwb;
+    color: $white; 
+}
+.footer-list {
+    list-style: none;
+    margin: 5px 0;
+    padding: 0;
+    li {
+        margin-top: 5px;
+        a {
+            color: $white; 
+            line-height: 22px;
+        }
+    }
+}
+.subcolumn {
+    float: left;
+    width: 50%;
+    padding-right: 10%;
+}
+.subcolumn, .subcolumn a {
+    color: $white; 
+}
+.footer-bottom {
+    background-color: $black;
+    padding: 10px; 
+}
+.footer-copy {
+    @include clearfix;
+    text-align: right;
+}
+.footer-copy a, .footer-copy span {
+    font-size: 11px;
+}
+.footer-copy span {
+    float: left;
+    color: #949393;
+}
+.footer-copy a {
+    color: #4F4F4F ;
+}
+
+// .container--footer {
+//     padding: 20px 40px;
+//     text-align: center;
+// }
+// .h5--foter {
+//     color: #FFF ;
+//     font-weight: bold;
+//     font-size: 20px;
+//     text-align: center;
+//     text-transform: uppercase;
+//     margin: 0 0 25px;
+// }
+// // .footer {
+// //     display: block;
+// //     padding: 15px 15px 30px;
+// //     font-size: 10px;
+// //     color: $color6;
+// // }
+// // .no-rgb .footer {
+// //     background-color: $color5a;
+// // }
+// .footer-copyright {
+//     display: inline-block;
+//     color: #898989 ;
+//     font-size: 11px;
+//     margin-top: 25px;
+// }
+// .footer-right {
+//     // float: right;
+//     font-size: 10px;
+//     display: block;
+//     color: $color2d;
+//     @include transition;
+//     // &:hover {
+//     //     color: #9E9E9E;
+//     // }
+// }
 
 
 

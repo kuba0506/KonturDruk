@@ -5,14 +5,17 @@
 .button {
 	display: inline-block;
 	font-size: 14px;
+	font-weight: $fwb;
 	padding: 15px 7px;
-	width: 220px;
+	// width: 220px;
+	width: 100%;
 	// border: 1px solid #C5C5C5;
 	border: 1px solid #C5C5C5;
 	// border-radius: 4px;
-	background: #e6e6e6;
-	float: right;
-	text-transform: uppercase;
+	background: $red;
+	// background: #e6e6e6;
+	// float: right;
+	// text-transform: uppercase;
 	background-clip: padding-box;
 	color: #FFF ;
 	vertical-align: middle;

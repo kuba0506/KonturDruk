@@ -11,7 +11,8 @@
 .formActions {
   display: block;
   clear: both;
-  padding: 3px 0 3px 120px;
+  // padding: 3px 0 3px 120px;
+  padding: 3px 0 3px;
 }
   .label-name {
     float: left;
@@ -73,13 +74,13 @@
       vertical-align: top;
     }
 
-.formActions {
-  margin: 1em 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-top: 1px solid #E8E8E8;
-  background: #F5F5F5;
-}
+// .formActions {
+//   // margin: 1em 0;
+//   padding-top: 15px;
+//   // padding-bottom: 15px;
+//   // border-top: 1px solid #E8E8E8;
+//   // background: #F5F5F5;
+// }
   .formActions--center {
     padding-left: 0;
     text-align: center;
@@ -94,3 +95,7 @@
     .formActions--sides-right {
       float: right;
     }
+.label input[type="file"] + span {
+  font-size: 11px;
+  color: #A3A3A3 ;
+}

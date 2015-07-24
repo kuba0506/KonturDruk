@@ -30,14 +30,17 @@
 
 .select {
     background: none repeat scroll 0 0 #fff;
-    border: 1px solid #e2e3e3;
+    border: 1px solid #ccc;
     border-radius: 2px;
     box-sizing: border-box;
     width: 70%;
-    padding: 5px;
-    text-transform: uppercase;
+    // color: #a3a3a3;
+    color: #CDCDCD;
+    font-weight: normal;
+    padding: 10px;
+    // text-transform: uppercase;
     // color: $color1;
-    font-weight: bold;
+    // font-weight: bold;
 }
 .select--full {
     width: 100%;
