@@ -1281,8 +1281,8 @@ Slider */
   content: "}";
   right: 20px;
 }
-.offer-inner .h4--offer {
-  font-size: 24px;
+.offer-inner .h4--start {
+  font-size: 18px;
   color: #b82323;
   padding: 0 25px;
   margin: 0;
@@ -1300,6 +1300,9 @@ Slider */
   background: #b82323;
   opacity: 0;
   z-index: 2;
+}
+.offer-content-hover .h4--start {
+  color: #fff;
 }
 .offer-content-hover .offer-inner .h4--offer {
   color: #fff;
@@ -1354,7 +1357,7 @@ Footer
 }
 
 .footer-contact {
-  width: 35%;
+  width: 30%;
 }
 
 .footer-address {
@@ -1404,7 +1407,7 @@ Footer
 
 .footer-ask-question {
   padding-left: 5%;
-  width: 20%;
+  width: 40%;
   padding-top: 50px;
 }
 
@@ -1714,6 +1717,8 @@ Breadcrumbs
 .productWrapper-offer .product-inner span {
   display: inline-block;
   margin-left: 5px;
+  color: #fff;
+  font-size: 16px;
 }
 
 .ico-offer {

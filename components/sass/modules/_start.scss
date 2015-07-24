@@ -97,8 +97,8 @@
         content: "}";
         right: 20px;
     }  
-     .h4--offer {
-        font-size: 24px;
+     .h4--start {
+        font-size: 18px;
         color: $red;
         padding: 0 25px;
         margin: 0;
@@ -114,6 +114,9 @@
     background: $red; 
     opacity: 0;
     z-index: 2;
+    .h4--start {
+        color: $white; 
+    }
     .offer-inner .h4--offer {
         color: $white;
         font-size: 18px;
