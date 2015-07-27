@@ -61,7 +61,7 @@ gulp.task('sass', function () {
 		css: 'builds/development/css/',
 		sass: 'components/sass/',
 		image: 'builds/development/images',
-		style: 'expanded',
+		style: 'compact',
 	}))
 	.on('error', gutil.log)
 	.pipe(autoprefixer(' > 2%'))
