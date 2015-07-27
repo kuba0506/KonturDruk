@@ -19,7 +19,7 @@
     <div class="header-top">
       <div class="container">
 
-        <div class="top-info">
+        <div class="top-info no-mobile">
           <div class="mail">
             <i class="icon icon-mail"></i>
             <a href="mailto:biuro@konturdruk.pl">biuro@konturdruk.pl</a>
@@ -42,29 +42,32 @@
         <a href="#" rel="home">
           <img src="images/logo.png" alt="EXAMPLE">
         </a>
-        <a href="#" rel="home" class="logo-hover">
+        <a href="#" rel="home" class="logo-hover no-mobile">
           <img src="images/logo-hover.png" alt="EXAMPLE">
         </a>
       </h1>
       
       <nav class="nav" role="navigation">
-        <ul class="menu">
-          <li class="dropdown" data-dropdown>
-              <a href="#" class="triangle">o nas</a>
-              <ul class="submenu" data-dropdown-content>
-                <li><a href="#">sitodruk</a></li>
-                <li><a href="#">termotransfer</a></li>
-                <li><a href="#">haft komputerowy</a></li>
-                <li><a href="#">sublimacja</a></li>
-                <li><a href="#">dtg</a></li>
-                <li><a href="#">tempodruk</a></li>
-              </ul>
-          </li>
-          <li><a href="#" class="triangle">oferta</a></li>
-          <li><a href="#" class="triangle">techniki zdobienia</a></li>
-          <li><a href="#" class="triangle">kontakt</a></li>
-          <li class="fb"><a href="#"></a></li>
-        </ul>        
+        <button class="mobile-menu" type="button"><span>Mobile Menu</span></button>
+        <div class="ul-wrapper">
+          <ul class="menu">
+            <li class="dropdown" data-dropdown>
+                <a href="#" class="triangle">o nas</a>
+                <ul class="submenu" data-dropdown-content>
+                  <li><a href="#">sitodruk</a></li>
+                  <li><a href="#">termotransfer</a></li>
+                  <li><a href="#">haft komputerowy</a></li>
+                  <li><a href="#">sublimacja</a></li>
+                  <li><a href="#">dtg</a></li>
+                  <li><a href="#">tempodruk</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="triangle">oferta</a></li>
+            <li><a href="#" class="triangle">techniki zdobienia</a></li>
+            <li><a href="#" class="triangle">kontakt</a></li>
+            <li class="fb"><a href="#"></a></li>
+          </ul>
+        </div>
       </nav>
 
     </div><!-- /container-header -->
@@ -310,7 +313,7 @@
           </div>
         </div>
 
-        <div class="footer-ask-question">
+        <div class="footer-ask-question no-mobile">
           <div class="ask-box">
             <div class="ask-text">
               <div class="ask-text">
@@ -432,7 +435,9 @@
    </div> 
 
   </footer>
-
+  
+  <div id="scrollToTop"><span class="icon icon-arrow-down"></span></div>
+  
   <script src="js/jquery-1.11.2.min.js"></script>
   <script src="js/libs.js"></script>
   <script src="js/scripts.js"></script>

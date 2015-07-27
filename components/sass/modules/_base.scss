@@ -128,7 +128,6 @@ fieldset, .fieldset {
   margin: 0;
 }
 .hide {display: none}
-.no-mobile {display: block;}
 .alignLeft {
     text-align: left;
 }
@@ -156,6 +155,9 @@ fieldset, .fieldset {
 .pullCenter {
     display: block;
     margin: 0.8em auto;
+}
+.mobile-menu, #toTop {
+  display: none;
 }
 /*
 Grid

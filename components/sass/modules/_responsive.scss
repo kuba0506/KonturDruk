@@ -13,13 +13,197 @@ MEDIA QUERIES
   }
 }
 
-// @media #{$larger-phone} {
-  
-// }
+@media #{$large-tablet} {
+  .no-mobile {display: none !important;}
+  .footer-contact, .footer-address {
+      width: 50%;
+  }
+  .product-item {
+      width: 31.333%;
+  }
+  .productWrapper-offer .product-item {
+      width: 33%;
+      height: 40px;
+      padding: 5px;
+      img {
+            // display: block;
+          max-width: 20%;
+      }
+  }
+  .productWrapper-offer .product-inner {
+      line-height: 30px;
+  }
+  .productWrapper-offer {
+      margin-bottom: 30px;
+  }
+  .offer .productWrapper .product-item {
+      width: 48.5%;
+      margin-bottom: 2%;
+  }
+}
 
-// @media #{$phone} {
+@media #{$tablet} {
+    .container {
+        width: 95%;
+    }
+    #scrollToTop {
+        display: block;
+        position: fixed;
+        right: 10px;
+        bottom: 30px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        @include border-radius;
+        @include transition;
+        cursor: pointer;
+        line-height: 40px;
+        background-color: $lightGrey;
+        opacity: 0.5;
+        &:hover {
+            opacity: 0.8;
+        }
+        span {
+            color: $black;
+            font-size: 20px;
+            vertical-align: middle;
+            margin: 0;
+            padding: 0; 
+        }  
+    }
+    .header-top {
+        padding: 20px 0;
+    }
+    .top-info {
+        width: 75%;
+    }
+    .top-lang {
+        width: 25%;
+    }
+    .logo {
+        width: 100%;
+        float: none;
+        text-align: center;
+        min-height: 0;
+        margin: 10px 0;
+        a {
+            display: inline-block;
+            position: static;
+        }
+    }
+    ul.menu {
+        padding: 0;
+    }
+    .top-lang a {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        margin-right: 15px;
+    }
+    .column {
+        width: 50%;
+    }
+    .item-box {
+        padding: 0 10px;
+    }
+    .subpage-gallery .product-item, .productWrapper-offer .product-item,
+    .productWrapper--catalog .product-item {
+        width: 48.5%;
+    }
+    .productWrapper-offer .product-item {
+        margin-bottom: 1%;
+    }
+    .h5--footer {
+        font-size: 22px;
+    }
+    .contact-page .column {
+        width: 50%;
+    }
+    .top-lang {
+        float: right;
+    }
+    @import 'mobile-menu';
 
-// }
+    ul.menu {
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: $white;
+        border-bottom: 1px solid $grey; 
+        z-index: 1000;
+        li {
+            display: block;
+            &:hover .submenu {
+                max-height: none; 
+                height: auto;
+            }
+
+            &.fb {
+                padding: 10px 40px;
+            }
+            > a {
+                padding: 10px;
+            }
+        }
+        > li {
+            padding: 10px 15px;
+            border-top: 1px solid $grey; 
+            &:first-child {
+                border-top: none;
+            }
+        }
+    }
+    ul.submenu {
+        position: static;
+        a {
+            line-height: 25px;
+        }
+    }
+    li.dropdown:hover > a.triangle::before, 
+    li.dropdown--open > a.triangle::before {
+        border-width: 0;
+    }
+}
+
+@media #{$phone} {
+    .top-lang {
+        width: 50%;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .titleWrapper {
+        padding: 20px 0 15px; 
+    }
+    .start-text {
+        padding: 15px 0;
+        margin-bottom: 20px;
+    }
+    .offer .productWrapper .product-item {
+        width: 100%;
+    }
+    .footer-contact, .footer-address {
+        width: 100%;
+    }
+    .footer-trusted {
+        display: none;
+    }
+    .column {
+        width: 100%;
+        padding: 2%;
+    }
+    .subpage-text {
+        -webkit-columns: 1; 
+        -moz-columns: 1; 
+        columns: 1; 
+        padding: 10px 0;
+    }
+    .footer-address {
+        padding-top: 30px;
+    }
+    .productWrapper--catalog .product-item {
+        width: 100%;
+    }
+}
 
 // @media #{$laptop} {
 //    .container {

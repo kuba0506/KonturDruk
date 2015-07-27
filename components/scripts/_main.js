@@ -1,5 +1,7 @@
 var konturDruk = function () {
 
+// =include menu-mobile.js
+// =include scrollTotop.js
 // =include cycle.js
 /// =include lightbox.js
 // =include dropdown.js

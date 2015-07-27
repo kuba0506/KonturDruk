@@ -49,9 +49,10 @@ $red: #b82323;
 
 //Responsive
 $small-desktop: "only screen and (max-width: 1025px)";
-// $tablet: "only screen and (max-width: 603px)";
+$large-tablet: "only screen and (max-width: 853px)";
+$tablet: "only screen and (max-width: 768px)";
+$phone: "only screen and (max-width: 480px)";
 // $larger-phone: "only screen and (max-width: 480px)";
-// $phone: "only screen and (max-width: 360px)";
 
 // $laptop: "only screen and (max-width: 1369px)";
 // $small-laptop: "only screen and (max-width: 993px)";

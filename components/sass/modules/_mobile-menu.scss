@@ -7,7 +7,7 @@ Mobile menu - nowe
   position: fixed;
   z-index: 9999;
   top: 10px;
-  left: 20px;
+  left: 10px;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -24,11 +24,16 @@ Mobile menu - nowe
   border-radius: 2px;
   border: none;
   cursor: pointer;
-  -webkit-transition: background .3s linear;
-  -moz-transition: background .3s linear;
-  -ms-transition: background .3s linear;
-  -o-transition: background .3s linear;
-  transition: background .3s linear;
+  background-color: $white; 
+  opacity: 0.5;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 .mobile-menu:focus {
   outline: none;
@@ -58,6 +63,21 @@ Mobile menu - nowe
 }
 .mobile-menu span:after {
   bottom: -10px;
+}
+
+.ul-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    z-index: 1000;
+    top: -100%;
+    left: 0;
+    @include transition(.6s);
+    background: rgba($white, .8); 
+}
+.ul-wrapper.menu-toggle {
+    top: 0;
 }
 
 /*

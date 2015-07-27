@@ -1,4 +1,33 @@
 var konturDruk = function () {
+//Menu mobilne
+    $('.mobile-menu').on('click', function () {
+        $(this).toggleClass('mobile-menu--rotate');
+
+        $('.ul-wrapper').toggleClass('menu-toggle');
+    });
+
+//Wyłącznie menu mobilnego
+    $('body').on('click', function (e) {
+
+        if (!$(e.target).closest('.nav').length) {
+            $('.mobile-menu').removeClass('mobile-menu--rotate');
+            $('.ul-wrapper').removeClass('menu-toggle');
+        }
+    });
+//=========================== Scroll =============================//
+$('#ToTop').hide();
+$(window).scroll(function(){
+    if($(this).scrollTop() > 300) {
+        $('#scrollToTop').fadeIn();
+    } else 
+    {
+        $('#scrollToTop').fadeOut();
+    }
+});//scroll
+
+$('#scrollToTop').click(function(){
+    $('html,body').animate({scrollTop:0},500);
+});
 /*
      ######  ##    ##  ######  ##       ########
     ##    ##  ##  ##  ##    ## ##       ##
@@ -34,7 +63,7 @@ var konturDruk = function () {
             timer_time = 350;
 
         if ($(window).width() < 768) {
-            a.removeClass(triangle);
+            // a.removeClass(triangle);
 
             dropdowns.on('click', function(event) {
                 event.preventDefault();
@@ -43,14 +72,14 @@ var konturDruk = function () {
                     content = link.find('[data-dropdown-content]');
                 if (event.type === 'click') {
                     if (!open) {
-                        linkA.addClass(triangle);
+                        // linkA.addClass(triangle);
                         link.addClass(open_class);
                         content.show();
                         open = link;
                         open_content = content;
                     } else {
                         if (open) {
-                            linkA.removeClass(triangle);
+                            // linkA.removeClass(triangle);
                             open.removeClass(open_class);
                             open_content.hide();
                             open_content = open = false;
@@ -63,7 +92,7 @@ var konturDruk = function () {
 
         $('body').on('click.dropdown-clear', function(event) {
             if (open && !$(event.target).closest('[data-dropdown]').length) {
-                a.removeClass(triangle);
+                // a.removeClass(triangle);
                 open.removeClass(open_class);
                 open_content.hide();
                 open_content = open = false;
