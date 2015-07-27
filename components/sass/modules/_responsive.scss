@@ -1,194 +1,25 @@
 /*
 MEDIA QUERIES
  */
-@media #{$tablet} {
-  .top-info, .top-logIn, .top-cart {
-    padding: 5px 0;
-  }
-  .top-info, .top-logIn {
-    width: 50%;
-  }
-  .top-cart {
-    width: 100%;
-  }
-  .tel-info, .mail-info {
-    padding: 15px 5px ;
-    font-size: 17px;
-    font-weight: normal;
-  }
-  .product-item {
-    width: 100%;
-  }
-  .h3--produkt a {
-    font-size: 16px;
-  }
-  .input--solokolos-full {
-    font-size: 16px;
-    padding: 15px 8px;
-  }
-  .register, .button-logIn {
-    font-size: 14px;
-    padding: 15px 5px;
-  }
-  .span-produkt-lewo, .span-produkt-prawo {
-    float: left;
-    width: 100%;
-  }
-  .span-produkt-lewo {
-    margin-bottom: 20px;
-  }
-  .productWrapper-product-info {
-    margin-top: 15px;
-    text-align: center
-  }
-  .productWrapper-product-info .img-product {
-    width: 19.25%;
-  }
-}
-
-@media #{$larger-phone} {
-  .logo {
-    width: 100%;
-    margin: 0;
-    img {
-      max-width: 40%;
-    }
-  }
-  .register, .button-logIn {
-    width: 100%;
-  }
-  .register {
-    font-size: 12px;
-  }
-  .quick-contact {
-    width: 100%;
-  }
-  .top-info {
-    text-align: right;
-    padding-right: 15px;
-  }
-  .top-logIn {
-    text-align: left;
-    padding-left: 15px;
-  }
-  .top-info--nav a {
+@media #{$small-desktop} {
+  .productWrapper-offer .product-inner span {
     font-size: 14px;
   }
-  .tel-info, .mail-info {
-    width: 49%;
-    float: left;
-    font-size: 14px;
-    padding: 10px 5px;
-    font-weight: bold;
-  }
-  .tel-info {
-    margin-right: 1%;
-  }
-  .mail-info {
-    margin-left: 1%;
-  }
-  .h5--foter {
-    font-size: 16px;
-  }
-  .h3--news {
-    font-size: 15px;
-    line-height: 1.2;
-  }
-  .start-news-time {
-    margin: 5px 0 10px;
-  }
-  .no-mobile {
+  .productWrapper-offer .product-inner img.leftImg {
     display: none;
   }
-  .news-text {
-    width: 100%;
-    padding-left: 0;
-  }
-  .h2--produkt {
-    font-size: 18px;
-  }
-  .productWrapper-product-info .img-product {
-    width: 32%;
-  }
-  .bottom-sticker {
-    font-size: 10px;
+  #map_canvas {
+    height: 300px !important;
   }
 }
 
-@media #{$phone} {
-.input--solokolos, .button--solokolos {
-  height: 40px;
-  line-height: 40px;
-}
-.button--solokolos .icon-search {
-  font-size: 25px;
-}
-.input--solokolos, .input--solokolos-full {
-  font-size: 15px;
-}
-.nav-right a .icon {
-  font-size: 20px;
-  margin-right: 2px;
-}
-.top-cart .h4--top{
-  margin-left: 13px;
-}
-.nav-right a {
-  font-size: 14px;
-}
-ul.tabs li a {
-  font-size: 13px;
-}
-.panel table td, .panel table th {
-  display: block;
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #e3e3e3;
-  border-left: 1px solid #e3e3e3;
-  border-right: 1px solid #e3e3e3;
-}
-ul.tabs li a {
-  padding: 10px 5px;
-}
-table tr:first-child td:first-child {
-  border-top: 1px solid #e3e3e3;
-}
-td.td--title {
-  font-weight: bold;
-  font-size: 14px;
-}
-.main-nav {
-  width: 100%;
-  left: -100%;
-}
-.container {
-  padding: 0 10px;
-}
-.container--header {
-  padding: 20px 10px 0;
-}
-.container--footer {
-  padding: 15px 10px;
-}
-.tel-info .icon, .mail-info .icon {
-  display: none;
-}
-.shipment, .availability {
-  height: auto;
-}
-.span-produkt-prawo {
-  padding: 0;
-}
-.h2--produkt {
-  font-size: 16px;
-}
-.search {
-  margin-bottom: 0;
-}
-// .btn-to-basket {
-//   line-height: 30px;
+// @media #{$larger-phone} {
+  
 // }
-}
+
+// @media #{$phone} {
+
+// }
 
 // @media #{$laptop} {
 //    .container {

@@ -39,29 +39,34 @@
 .productWrapper--catalog .item-photo {
     text-align: center;
     position: static;
-    height: 140px;
-    line-height: 140px;
+    // height: 140px;
+    // line-height: 140px;
     img {
         display: inline-block;
         vertical-align: middle;
     }
 }
 .productWrapper-offer .product-item {
+    background: $red;
     width: 19%;
+    padding: 10px 5px;
+    max-height: 60px;
+    overflow: hidden;
 }
 .productWrapper-offer .product-inner {
     height: auto;
     line-height: normal;
-    background: $red;
     color: $white; 
     text-align: center; 
     font-size: 16px;
-    line-height: 60px;
-    padding: 0 5px;
-    height: 60px;
+    line-height: 40px;
+    white-space: nowrap;
+    // line-height: 60px;
+    // height: 60px;
     img {
         display: inline-block;
         vertical-align: middle;
+        width: auto ;
     }
     span {
         display: inline-block;
